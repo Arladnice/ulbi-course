@@ -1,1 +1,0 @@
-(()=>{"use strict";console.log("someFn 2323232")})();
