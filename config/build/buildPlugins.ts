@@ -7,7 +7,7 @@ export function buildPlugins({
     paths,
     isDev,
 }: BuildOptions): webpack.WebpackPluginInstance[] {
-    return [
+    return [ 
         new HtmlWebpackPlugin({
             template: paths.html,
         }),
@@ -19,5 +19,6 @@ export function buildPlugins({
         new webpack.DefinePlugin({
             __IS_DEV__: isDev,
         }),
+        new webpack.HotModuleReplacementPlugin(),
     ];
 }
