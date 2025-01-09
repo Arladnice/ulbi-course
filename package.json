@@ -7,7 +7,9 @@
         "build:prod": "webpack --env mode=production",
         "build:dev": "webpack --env mode=development",
         "lint:ts": "eslint \"src/**/*.{ts,tsx}\"",
-        "lint:ts:fix": "eslint \"src/**/*.{ts,tsx}\" --fix"
+        "lint:ts:fix": "eslint \"src/**/*.{ts,tsx}\" --fix",
+        "lint:scss": "npx stylelint \"**/*.scss\"",
+        "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix"
     },
     "keywords": [],
     "author": "",

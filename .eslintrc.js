@@ -3,7 +3,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ["plugin:react/recommended"],
+  extends: ["plugin:react/recommended", "plugin:i18next/recommended"],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
@@ -21,9 +21,10 @@ module.exports = {
   rules: {
     "react/jsx-filename-extension": [2, { extensions: [".js", ".jsx", ".ts", ".tsx"] }],
     "react/react-in-jsx-scope": "off",
-    "react/require-default-props": "off",
     "react/prop-types": "off",
     "react/no-deprecated": "off",
+    "no-unused-vars": "warn",
+    "i18next/no-literal-string": ["error", { markupOnly: true, ignoreAttribute: ["data-testid", "to"] }],
   },
   globals: {
     __IS_DEV__: true,
