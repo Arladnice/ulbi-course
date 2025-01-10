@@ -17,7 +17,7 @@ const App = () => {
           <Sidebar />
           <AppRouter />
         </div>
-      </Suspense>
+      </Suspense> 
     </div>
   );
 };
