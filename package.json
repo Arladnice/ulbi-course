@@ -10,7 +10,9 @@
     "lint:ts:fix": "eslint \"src/**/*.{ts,tsx}\" --fix",
     "lint:scss": "npx stylelint \"**/*.scss\"",
     "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix",
-    "unit": "jest --config ./config/jest/jest.config.ts"
+    "unit": "jest --config ./config/jest/jest.config.ts",
+    "storybook": "start-storybook -p 6006 -c ./config/storybook",
+    "build-storybook": "build-storybook -c ./config/storybook"
   },
   "keywords": [],
   "author": "",
@@ -121,5 +123,9 @@
     "style-loader": "^3.3.1",
     "ts-node-dev": "^2.0.0",
     "uuid": "^9.0.1"
+  },
+  "browser": {
+    "path": false,
+    "stream": false
   }
 }
